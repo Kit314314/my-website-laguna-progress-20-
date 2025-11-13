@@ -1,0 +1,273 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: black;
+    overflow-x: hidden;
+    
+}
+
+.nav {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    border-bottom: 1px solid white;
+    box-shadow: 2px 2px 20px gray;
+}
+
+.nav_title {
+    color: white;
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    position: static;
+}
+
+.content {
+    display: flex;
+    margin-top: 80px;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.overview, .history {
+    background-color: #375777b2;
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+    min-height: 700px;
+    padding: 40px 20px 20px 20px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.overview {
+    margin-left: 0;
+}
+
+.history {
+    margin-left: 0;
+}
+
+.overview p, .history p {
+    font-size: 20px;
+    color: white;
+    word-spacing: 0.2em;
+    padding: 0 20px;
+}
+
+.polaroid {
+    box-shadow: 2px 2px 20px gray;
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.polaroid h2 {
+    margin-top: 40px;
+}
+
+.location {
+    width: 440px;
+    height: 450px;
+    margin: 30px 0 0 0;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: 0.5s 0.8s;
+    background: #eaeaea;
+}
+
+.location:hover {
+    width: 500px;
+    height: 600px;
+    margin-top: 0;
+}
+
+.list_of_cities {
+    width: 95%;
+    height: 50px;
+    position: relative;
+    left: 2.5%;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-top: 100px;
+}
+
+.list_of_cities a {
+    color: white;
+    text-decoration: none;
+    transition: font-size 0.3s, transform 0.3s;
+}
+
+.list_of_cities a:hover {
+    font-size: 1.25em;
+    transform: translateX(-5px);
+}
+
+.list_of_cities::-webkit-scrollbar {
+    display: none;
+}
+
+.alaminos1 {
+    width: 440px;
+    height: 450px;
+    margin: 30px 0 0 0;
+    box-shadow: 2px 2px 20px gray;
+    border-radius: 20px;
+    transition: 0.5s 0.8s;
+    background: #eaeaea;
+    
+}
+
+
+.alaminos{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.alaminos h2{
+    margin-top: 40px;
+}
+
+.info_container{
+    height: 160px;
+    width: 460px;
+    opacity: 0;
+    transition: 0.8s 0.8s;
+    margin-right: 20px;
+}
+
+.alaminos_info{
+    position: relative;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+.main_alaminos{
+    height: 200px;
+    width: auto;
+    display: flex;
+    margin-top: 80px;
+    gap: 70px;
+    margin-left: 40px;
+    flex-wrap: wrap;
+    margin-left: 105px;
+
+}
+
+.main_alaminos:hover > .info_container{
+    opacity: 1;
+
+}
+
+.pic{
+    position: relative;
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.pic2{
+    width: 460px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px gray;
+    border-bottom: 1px black;
+    margin-top: 20px;
+    
+}
+
+.main_bay{
+    height: 1200px;
+    width: 95%;
+    position: relative;
+    bottom: -510px;
+    left: 20px;
+    border-top: 5px solid white;
+    margin-left:40px ;
+    gap:50px;
+    display: flex;
+}
+
+
+.bay_container1{
+    height: 600px;
+    width: 500px;
+    position: relative;  
+    margin-left:120px ;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+
+
+.main_bay h2{
+    padding-top: 50px;
+
+
+}
+
+.img_bay{
+    width:465px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px gray;
+    
+}
+
+
+.info_bay{
+    height: 400px;
+    width: 600px;
+
+    background-color: #37577784;
+    margin-top: 100px;
+    border-radius: 20px;
+
+}
+
+.main_bay .info_bay p{
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+}
